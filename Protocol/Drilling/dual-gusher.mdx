@@ -1,0 +1,68 @@
+---
+title: "Dual-Gusher"
+---
+
+The dual gusher system consists of two separate reward pools that accumulate over time and are distributed when a gusher is hit. There are two types of gushers: a full gusher (both OIL and SOL) and a SOL-only gusher.
+
+### The Pools
+
+**OIL Gusher Pool**
+
+* Accumulates **+2 OIL** every round
+* Grows continuously until a full gusher hits
+* Only distributed when a full gusher is hit (not SOL-only gusher)
+
+**SOL Gusher Pool**
+
+* Accumulates **1% of all winnings** (SOL) every round
+* Grows continuously until any gusher hits
+* Distributed when either a full gusher or SOL-only gusher hits
+
+### How It Works
+
+There are two types of gushers that can be hit:
+
+**Full Gusher (1 in 625 chance)**
+
+* Both OIL and SOL gusher pools are distributed
+* Winning drillers receive their normal OIL reward (up to 1 OIL) **plus** their share of both accumulated pools
+* Rewards are split proportionally based on stake on the winning block
+
+**SOL-Only Gusher (1 in 325 chance)**
+
+* Only the SOL gusher pool is distributed
+* The OIL gusher pool continues accumulating (not distributed)
+* Winning drillers receive their normal OIL reward (up to 1 OIL) **plus** their share of the accumulated SOL gusher pool
+* Rewards are split proportionally based on stake on the winning block
+
+**Important:** If both gushers hit in the same round (extremely rare), the full gusher takes precedence and both pools are distributed.
+
+If no gusher is hit, both pools continue accumulating for future rounds.
+
+### Example Scenarios
+
+**Scenario 1: Full Gusher Hits**
+
+After 100 rounds without a gusher:
+
+* OIL pool: 200 OIL (2 × 100)
+* SOL pool: Accumulated 1% of all winnings from 100 rounds
+
+When a full gusher hits (1 in 625), all accumulated OIL and SOL are distributed to the winning drillers proportionally.
+
+**Scenario 2: SOL-Only Gusher Hits**
+
+After 50 rounds without a gusher:
+
+* OIL pool: 100 OIL (2 × 50) - **continues accumulating**
+* SOL pool: Accumulated 1% of all winnings from 50 rounds
+
+When a SOL-only gusher hits (1 in 325), only the accumulated SOL is distributed. The OIL pool remains and continues growing for the next full gusher.
+
+**Scenario 3: Both Hit (Rare)**
+
+If both gushers hit in the same round, the full gusher takes precedence:
+
+* Both OIL and SOL pools are distributed
+* This is treated as a normal full gusher event
+

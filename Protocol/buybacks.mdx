@@ -1,0 +1,36 @@
+---
+title: "Buybacks"
+---
+
+The buyback and barreling mechanism is the core deflationary engine of the OIL protocol. It creates continuous upward price pressure by permanently removing OIL from circulation.
+
+### How It Works
+
+1. **Protocol collects revenue** from drilling fees and winnings
+2. **Treasury accumulates SOL** for buybacks
+3. **Buyback operation** swaps SOL for OIL via Jupiter
+4. **OIL is barreled**: 90% is permanently burned, 10% goes to stakers
+5. **Supply decreases** → Price pressure increases
+
+### Revenue Sources
+
+* **10% of deployed SOL** → Treasury (buyback fund)
+* **10% of winnings** → Treasury (buybacks)
+
+### Buyback Operation
+
+Treasury SOL is automatically swapped for OIL via Jupiter aggregator. Buybacks run hourly (if treasury has sufficient balance) or can be triggered manually.
+
+<Info>
+Track all buybacks here: [oil.supply/explore](https://oil.supply/explore)
+</Info>
+
+### Barreling (Burning)
+
+"Barreling" refers to the permanent burning of OIL tokens. When buybacks execute:
+
+* **90% of purchased OIL** → Permanently burned (supply reduction)
+* **10% of purchased OIL** → Distributed to stakers (proportional to stake score)
+
+Burned OIL cannot be recovered and creates continuous deflationary pressure.
+

@@ -1,0 +1,40 @@
+---
+title: "Emissions"
+---
+
+OIL tokens are minted through gameplay rewards, with a maximum supply of 21 million tokens. The emission schedule is designed to gradually decrease over time, creating scarcity as the protocol matures.
+
+### Emission Schedule
+
+The protocol uses a **weekly halving** system that automatically reduces emissions every week:
+
+* **Week 0**: 50 OIL per round
+* **Week 1**: 40 OIL per round
+* **Week 2**: 30 OIL per round
+* **Week 3**: 20 OIL per round
+* **Week 4+**: 10 OIL per round (floor)
+
+Emissions decrease by **10 OIL per week** until reaching the floor of **10 OIL per round**, which is maintained indefinitely.
+
+### Gusher Emissions
+
+In addition to the base emission, **2 OIL per round** is added to the gusher pool. This is a fixed amount that does not decrease over time, ensuring the gusher pool continues to accumulate value even as base emissions reach the floor.
+
+### Total Emissions Per Round
+
+| Week | Base Emission | Gusher Emission | Total Per Round |
+| ---- | ------------- | --------------- | --------------- |
+| 0    | 50 OIL        | 2 OIL           | 52 OIL          |
+| 1    | 40 OIL        | 2 OIL           | 42 OIL          |
+| 2    | 30 OIL        | 2 OIL           | 32 OIL          |
+| 3    | 20 OIL        | 2 OIL           | 22 OIL          |
+| 4+   | 10 OIL        | 2 OIL           | 12 OIL          |
+
+### Automatic Weekly Updates
+
+The emission week is automatically updated during the `reset` instruction when a week has passed since the last update. This ensures the emission schedule progresses without manual intervention, creating predictable and transparent token distribution.
+
+### Maximum Supply
+
+The protocol has a **hard cap of 21 million OIL tokens**. Once this supply is reached, no further tokens will be minted, regardless of the emission schedule. This mirrors Bitcoin's 21M supply cap, positioning OIL as a Solana-native store of value.
+
