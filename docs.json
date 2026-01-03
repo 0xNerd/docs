@@ -20,41 +20,36 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "index"
-            ]
-          },
-          {
-            "group": "Protocol",
-            "pages": [
-          {
-                "group": "Drilling Guide",
-            "pages": [
-                  "Protocol/Drilling/drilling",
-                  "Protocol/Drilling/dual-gusher",
-                  "Protocol/Drilling/emissions",
-                  "Protocol/Drilling/pool-drilling",
-                  "Protocol/Drilling/referrals"
+        "group": "Getting Started",
+        "pages": [
+          "index"
         ]
       },
-              "Protocol/buybacks",
-              "Protocol/refining",
-              "Protocol/staking"
+      {
+        "group": "Protocol",
+        "pages": [
+          {
+            "group": "Drilling Guide",
+            "pages": [
+              "Protocol/Drilling/drilling",
+              "Protocol/Drilling/dual-gusher",
+              "Protocol/Drilling/emissions",
+              "Protocol/Drilling/pool-drilling",
+              "Protocol/Drilling/referrals"
             ]
           },
-          {
-            "group": "More",
-            "pages": [
-              "More/links",
-              "More/tokenomics"
-      ]
-    }
+          "Protocol/buybacks",
+          "Protocol/refining",
+          "Protocol/staking"
+        ]
+      },
+      {
+        "group": "More",
+        "pages": [
+          "More/links",
+          "More/tokenomics"
         ]
       }
     ]
