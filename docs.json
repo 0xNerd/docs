@@ -23,13 +23,13 @@
     "groups": [
       {
         "group": "Getting Started",
-        "pages": [
+            "pages": [
           "index"
-        ]
-      },
-      {
+            ]
+          },
+          {
         "group": "Protocol",
-        "pages": [
+            "pages": [
           {
             "group": "Drilling Guide",
             "pages": [
@@ -38,16 +38,16 @@
               "Protocol/Drilling/emissions",
               "Protocol/Drilling/pool-drilling",
               "Protocol/Drilling/referrals"
-            ]
-          },
+        ]
+      },
           "Protocol/buybacks",
           "Protocol/refining",
           "Protocol/staking"
         ]
       },
-      {
+          {
         "group": "More",
-        "pages": [
+            "pages": [
           "More/links",
           "More/tokenomics"
         ]
