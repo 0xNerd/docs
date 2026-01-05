@@ -2,7 +2,7 @@
 title: "Auction"
 ---
 
-OIL uses a continuous Dutch auction mining mechanism (reverse auction), built on Solana to take advantage of high speeds and low fees.
+OIL uses a continuous Dutch auction drilling mechanism (reverse auction), built on Solana to take advantage of high speeds and low fees.
 
 ### Dutch Auction
 
@@ -12,20 +12,20 @@ From this new starting price, the auction price decreases linearly to 0 SOL over
 
 ### OIL Wells
 
-Designed as a 2x2 grid, equivalent to 4 OIL wells. Each well has a different mining rate (amount of OIL mined per second), uniquely designed for diversity and competition. This encourages users to target better wells for faster mining, but with higher auction costs.
+Designed as a 2x2 grid, equivalent to 4 OIL wells. Each well has a different drilling rate (amount of OIL drilled per second), uniquely designed for diversity and competition. This encourages users to target better wells for faster drilling, but with higher auction costs.
 
-|   Well   | Tier | Mining rate (OIL/s) | Initial Bid (SOL) |
+|   Well   | Tier | Drilling rate (OIL/s) | Initial Bid (SOL) |
 | :------: | :--: | :-----------------: | :---------------: |
-| Well 0 | Entry | 0.05 | 0.05 |
-| Well 1 | Standard | 0.15 | 0.15 |
-| Well 2 | Premium | 0.35 | 0.35 |
-| Well 3 | Elite | 0.65 | 0.65 |
+| Well 0 | Seep | 0.05 | 0.05 |
+| Well 1 | Flow | 0.15 | 0.15 |
+| Well 2 | Gusher | 0.35 | 0.35 |
+| Well 3 | Blowout | 0.65 | 0.65 |
 
 ### Auction Distribution
 
 When someone seizes a position, **100% Auction Price** is allocated as follows:
 
-* **86%** to previous owner: Returned to the previous miner, creating incentive to defend position.
+* **86%** to previous owner: Returned to the previous driller, creating incentive to defend position.
 * **10%** buyback and burn: Used to buy back OIL and burn, reducing token supply and increasing value.
 * **3%** for Staking: Allocated to staking pool to reward OIL holders.
 * **1%** → Dev + Protocol Fee.
