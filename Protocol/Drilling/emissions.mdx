@@ -2,33 +2,20 @@
 title: "Emissions"
 ---
 
-OIL tokens are minted through gameplay rewards, with a maximum supply of 21 million tokens. The emission schedule is designed to gradually decrease over time, creating scarcity as the protocol matures.
+OIL tokens are minted through gameplay rewards, with a maximum supply of 21 million tokens. The emission schedule is designed to maintain sustainable token distribution while allowing for adaptive adjustments based on protocol needs.
 
-### Emission Schedule
+### Round Rewards
 
-The protocol uses a **weekly halving** system that automatically reduces emissions every week:
+Each round distributes **225 OIL** as rewards to drillers participating in the block-based drilling system.
 
-* **Week 0**: 50 OIL per round
-* **Week 1**: 40 OIL per round
-* **Week 2**: 30 OIL per round
-* **Week 3**: 20 OIL per round
-* **Week 4+**: 10 OIL per round (floor)
+### Reward Halving
 
-Emissions decrease by **10 OIL per week** until reaching the floor of **10 OIL per round**, which is maintained indefinitely.
+The round reward of 225 OIL is not a permanent value. The protocol includes a halving mechanism that can reduce emissions over time to maintain long-term sustainability and token value.
 
-### Emissions Per Round
+**How it works:**
 
-| Week | Emission Per Round |
-| ---- | ------------------- |
-| 0    | 50 OIL              |
-| 1    | 40 OIL              |
-| 2    | 30 OIL              |
-| 3    | 20 OIL              |
-| 4+   | 10 OIL              |
-
-### Automatic Weekly Updates
-
-The emission week is automatically updated during the `reset` instruction when a week has passed since the last update. This ensures the emission schedule progresses without manual intervention, creating predictable and transparent token distribution.
+* **Dynamic adjustments**: The halving mechanism can be activated or modified in response to evolving market dynamics, such as token price movements, supply growth patterns, and overall ecosystem health
+* **Decentralized control**: Changes to emission parameters are determined through community governance, giving drillers and token holders a voice in shaping the protocol's economic model
 
 ### Maximum Supply
 
