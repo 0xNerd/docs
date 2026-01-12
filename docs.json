@@ -31,22 +31,22 @@
         "group": "Protocol",
             "pages": [
               {
-                "group": "Block-Drilling",
+                "group": "Auction-Drilling",
                 "pages": [
-                  "Protocol/Drilling/block",
-                  "Protocol/Drilling/gusher",
-                  "Protocol/Drilling/emissions",
-                  "Protocol/Drilling/pool-drilling",
-                  "Protocol/Drilling/referrals"
+                  "Protocol/Auction-Drilling/auction",
+                  "Protocol/Auction-Drilling/emissions"
             ]
           },
           {
-            "group": "Auction-Drilling",
-            "pages": [
-              "Protocol/Auction-Drilling/auction",
-              "Protocol/Auction-Drilling/emissions"
-        ]
-      },
+            "group": "Block-Drilling",
+              "pages": [
+                "Protocol/Drilling/block",
+                "Protocol/Drilling/gusher",
+                "Protocol/Drilling/emissions",
+                "Protocol/Drilling/pool-drilling",
+                "Protocol/Drilling/referrals"
+            ]
+          },
           "Protocol/buybacks",
           "Protocol/refining",
           "Protocol/staking"
