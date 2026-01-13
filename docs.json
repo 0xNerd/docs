@@ -31,20 +31,20 @@
         "group": "Protocol",
             "pages": [
               {
-                "group": "Auction-Drilling",
+                "group": "Auction-Mining",
                 "pages": [
-                  "Protocol/Auction-Drilling/auction",
-                  "Protocol/Auction-Drilling/emissions"
+                  "Protocol/Auction-Mining/auction",
+                  "Protocol/Auction-Mining/emissions"
             ]
           },
           {
-            "group": "Block-Drilling",
+            "group": "Block-Mining",
               "pages": [
-                "Protocol/Drilling/block",
-                "Protocol/Drilling/gusher",
-                "Protocol/Drilling/emissions",
-                "Protocol/Drilling/pool-drilling",
-                "Protocol/Drilling/referrals"
+                "Protocol/Mining/block",
+                "Protocol/Mining/gusher",
+                "Protocol/Mining/emissions",
+                "Protocol/Mining/pool-mining",
+                "Protocol/Mining/referrals"
             ]
           },
           "Protocol/buybacks",

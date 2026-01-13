@@ -2,7 +2,7 @@
 title: "Block"
 ---
 
-Each round, drillers have one minute to deploy SOL to blocks in a 5x5 grid. At the end of the round, one winning block is chosen by the Entropy RNG program, which uses a commit-reveal scheme with slothash sampling to ensure verifiable randomness. All SOL deployed on losing blocks is split amongst drillers in proportion to the size of their claimed space on the winning block. In addition, the protocol distributes OIL rewards to winning drillers based on the current emission schedule. See the [emissions](/Protocol/Drilling/emissions) page for details on the dynamic emission schedule.
+Each round, miners have one minute to deploy SOL to blocks in a 5x5 grid. At the end of the round, one winning block is chosen by the Entropy RNG program, which uses a commit-reveal scheme with slothash sampling to ensure verifiable randomness. All SOL deployed on losing blocks is split amongst miners in proportion to the size of their claimed space on the winning block. In addition, the protocol distributes OIL rewards to winning miners based on the current emission schedule. See the [emissions](/Protocol/Mining/emissions) page for details on the dynamic emission schedule.
 
 **Important:** No fees are taken when deploying SOL. 100% of deployed SOL goes to the round account. Fees are calculated and distributed when the round ends.
 
@@ -16,13 +16,13 @@ When rounds end, winnings are distributed as follows:
 
 #### Gusher
 
-Each round, 1% of the total winnings (SOL) is added to the gusher pool. When the winning block is revealed, there is a 1 in 325 chance that those winning drillers will also hit the gusher, distributing the accumulated SOL gusher pool. If the gusher is not hit, the pool keeps accumulating and will be distributed to winning drillers when a gusher is hit in a future round.
+Each round, 1% of the total winnings (SOL) is added to the gusher pool. When the winning block is revealed, there is a 1 in 325 chance that those winning miners will also hit the gusher, distributing the accumulated SOL gusher pool. If the gusher is not hit, the pool keeps accumulating and will be distributed to winning miners when a gusher is hit in a future round.
 
 Winners receive their normal OIL reward (based on the current emission schedule) plus their share of the accumulated SOL gusher pool (if a gusher is hit), split in proportion to the size of their claimed space on the winning block.
 
 #### Split Rounds
 
-One in two rounds, the OIL reward is split evenly among all winning drillers instead of being awarded to a single top driller.
+One in two rounds, the OIL reward is split evenly among all winning miners instead of being awarded to a single top driller.
 
 #### Automation
 
