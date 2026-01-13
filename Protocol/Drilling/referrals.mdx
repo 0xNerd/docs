@@ -16,7 +16,7 @@ OIL uses a **single-tier referral system** where you earn rewards directly from 
 
 **Referral Bonus: 1.0%**
 
-When a referred driller claims rewards (both SOL and OIL), **1.0% of each claim** is credited to your referral account. This bonus comes from the protocol's admin fee, so it doesn't cost the driller anything extra.
+When a referred miner claims rewards (both SOL and OIL), **1.0% of each claim** is credited to your referral account. This bonus comes from the protocol's admin fee, so it doesn't cost the miner anything extra.
 
 #### Setting Up Referrals
 
@@ -28,10 +28,10 @@ When a referred driller claims rewards (both SOL and OIL), **1.0% of each claim*
    * Your referral link contains your wallet's public key
    * When someone uses your referral link to sign up, they'll be linked to you as their referrer
 3. **Referrer Assignment**
-   * When a new driller makes their **first deployment**, they can set a referrer
+   * When a new miner makes their **first deployment**, they can set a referrer
    * Once set, the referral relationship is **permanent** and cannot be changed
    * Self-referrals are prevented (you cannot refer yourself)
-   * The referral account must exist before a driller can be referred (created via `create_referral`)
+   * The referral account must exist before a miner can be referred (created via `create_referral`)
 
 #### Earning Rewards
 
@@ -78,8 +78,8 @@ The 1.0% bonus comes from the protocol's admin fee, so Bob pays nothing extra.
 
 #### Important Notes
 
-* **Permanent Relationship**: Once a driller is referred, the referrer cannot be changed
-* **Only New Miners**: Referrals can only be set when creating a new driller account (first deployment)
+* **Permanent Relationship**: Once a miner is referred, the referrer cannot be changed
+* **Only New Miners**: Referrals can only be set when creating a new miner account (first deployment)
 * **Referral Account Required**: The referrer must have created their referral account before someone can be referred
 * **Claim-Based Rewards**: Rewards only accumulate when referrals claim their rewards, not on deployment
 * **No Cost to Miner**: The referral bonus comes from the protocol's admin fee, so miners don't pay extra
