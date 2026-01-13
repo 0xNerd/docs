@@ -46,7 +46,7 @@
                 "Protocol/Mining/pool-mining"
             ]
           },
-          "Protocol/Mining/referrals",
+          "Protocol/referrals",
           "Protocol/buybacks",
           "Protocol/refining",
           "Protocol/staking"
