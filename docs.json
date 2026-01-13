@@ -43,10 +43,10 @@
                 "Protocol/Mining/block",
                 "Protocol/Mining/gusher",
                 "Protocol/Mining/emissions",
-                "Protocol/Mining/pool-mining",
-                "Protocol/Mining/referrals"
+                "Protocol/Mining/pool-mining"
             ]
           },
+          "Protocol/Mining/referrals",
           "Protocol/buybacks",
           "Protocol/refining",
           "Protocol/staking"

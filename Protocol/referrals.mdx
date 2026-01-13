@@ -1,0 +1,42 @@
+---
+title: "Referrals"
+---
+
+Earn passive rewards by referring friends to OIL. When your referrals claim rewards, you earn a percentage of their claims.
+
+<Info>
+Get your referral link here: [oil.supply/referral](https://oil.supply/referral)
+</Info>
+
+### How It Works
+
+OIL uses a **single-tier referral system**. You earn **0.5% of each claim** from both block-based and auction-based mining modes, totaling **1% across both modes**.
+
+**Referral Bonus: 0.5% per mode (1% total)**
+
+* **Block-based mining**: 0.5% of SOL and OIL claims
+* **Auction-based mining**: 0.5% of SOL and OIL claims
+* **Total**: 1% across all reward types
+
+The bonus comes from the protocol's admin fee, so it doesn't cost the miner anything extra.
+
+### Setup
+
+1. **Create your referral account** using the `create_referral` instruction (one-time setup)
+2. **Share your referral link** - when someone uses it to sign up, they're linked to you
+3. **Referrer is set** when a new miner makes their first deployment or bid (permanent, cannot be changed)
+
+### Earning Rewards
+
+Rewards accumulate when your referrals **claim** their rewards:
+* **0.5% of each block-based claim** (SOL/OIL) → credited to your referral account
+* **0.5% of each auction-based claim** (SOL/OIL) → credited to your referral account
+* Rewards are automatically transferred during the claim transaction
+* Claim your accumulated rewards anytime using `claim_referral`
+
+### Referral Account
+
+Tracks your referral stats:
+* **Total Referred**: Number of miners you've referred
+* **Total SOL/OIL Earned**: Lifetime earnings (for statistics)
+* **Pending SOL/OIL**: Claimable rewards ready to withdraw
