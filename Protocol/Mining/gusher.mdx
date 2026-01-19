@@ -10,14 +10,16 @@ The gusher system consists of a FOGO reward pool that accumulates over time and 
 
 * Accumulates **1% of all winnings** (FOGO) every round
 * Grows continuously until a gusher hits
-* Distributed when a gusher is hit (1 in 325 chance)
+* Distributed when a gusher is hit (1 in 625 chance)
+* **Rolling gusher**: When a gusher hits, 90% of the pool is distributed and 10% rolls over to the next gusher
 
 ### How It Works
 
-**Gusher (1 in 325 chance)**
+**Gusher (1 in 625 chance)**
 
-* The FOGO gusher pool is distributed to winning miners
-* Winning miners receive their normal OIL reward **plus** their share of the accumulated FOGO gusher pool
+* When a gusher is hit, **90% of the accumulated FOGO gusher pool** is distributed to winning miners
+* The remaining **10% rolls over** to the next gusher, allowing the pool to grow over time
+* Winning miners receive their normal OIL reward **plus** their share of the distributed FOGO gusher pool
 * Rewards are split proportionally based on stake on the winning block
 
 If no gusher is hit, the pool continues accumulating for future rounds.
@@ -30,5 +32,7 @@ After 50 rounds without a gusher:
 
 * FOGO pool: Accumulated 1% of all winnings from 50 rounds
 
-When a gusher hits (1 in 325), all accumulated FOGO is distributed to the winning miners proportionally based on their stake on the winning block.
+When a gusher hits (1 in 625):
+* **90% of the accumulated FOGO** is distributed to winning miners proportionally based on their stake on the winning block
+* **10% remains in the pool** and continues to accumulate with future 1% contributions
 

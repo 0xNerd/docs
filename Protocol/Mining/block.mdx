@@ -16,9 +16,13 @@ When rounds end, winnings are distributed as follows:
 
 #### Gusher
 
-Each round, 1% of the total winnings (FOGO) is added to the gusher pool. When the winning block is revealed, there is a 1 in 325 chance that those winning miners will also hit the gusher, distributing the accumulated FOGO gusher pool. If the gusher is not hit, the pool keeps accumulating and will be distributed to winning miners when a gusher is hit in a future round.
+Each round, 1% of the total winnings (FOGO) is added to the gusher pool. When the winning block is revealed, there is a 1 in 625 chance that those winning miners will also hit the gusher, distributing the accumulated FOGO gusher pool. 
 
-Winners receive their normal OIL reward (based on the current emission schedule) plus their share of the accumulated FOGO gusher pool (if a gusher is hit), split in proportion to the size of their claimed space on the winning block.
+**Rolling Gusher**: When a gusher is hit, 90% of the accumulated pool is distributed to winning miners, while 10% rolls over to the next gusher. This allows the gusher pool to grow over time even when it hits frequently.
+
+If the gusher is not hit, the pool keeps accumulating and will be distributed to winning miners when a gusher is hit in a future round.
+
+Winners receive their normal OIL reward (based on the current emission schedule) plus their share of the distributed FOGO gusher pool (if a gusher is hit), split in proportion to the size of their claimed space on the winning block.
 
 #### Split Rounds
 
@@ -28,3 +32,4 @@ One in two rounds, the OIL reward is split evenly among all winning miners inste
 
 The protocol supports automated deployments through executor bots, enabling hands-free operation for continuous participation.
 
+![OIL Protocol Economic Flow Diagram](/Images/block.png)
