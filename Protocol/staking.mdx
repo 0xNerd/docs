@@ -37,7 +37,7 @@ The multiplier depends on your lock duration. Values between the table points ar
 Rewards are distributed proportionally based on your stake score. When you deposit, withdraw, or claim, your rewards are automatically updated based on the cumulative rewards factor.
 
 * **Deposit**: Add OIL to your stake. Lock period can be set on first deposit or when adding to an unlocked stake.
-* **Withdraw**: Remove OIL from your stake. Only allowed if stake is unlocked.
+* **Withdraw**: Remove OIL from your stake. Early withdrawals from locked stakes are allowed but incur a penalty based on lock duration. The penalty is burned (deflationary).
 * **Claim**: Claim accumulated FOGO rewards.
 
 #### Reward Source
@@ -54,12 +54,28 @@ Rewards are distributed proportionally based on your stake score. When you depos
 
 * Lock is set on first deposit or when adding to unlocked stake
 * Cannot change lock period after it's set (for locked stakes)
-* Lock prevents withdrawal until expiration
+* **Early withdrawals are allowed but incur penalties** (see penalty table below)
 * Lock does NOT prevent deposits - you can always add more OIL
 * **Adding more OIL to a locked stake resets the lock timer**
 * Rewards accumulate regardless of lock status
 
-#### Multiple Stakes
+#### Early Withdrawal Penalties
 
-Users can create multiple independent stake accounts with sequential IDs (0, 1, 2, 3...). Each stake has its own balance, lock period, and rewards, useful for separating different strategies or time horizons.
+If you withdraw from a locked stake before the lock expires, a penalty is applied based on your lock duration. The penalty is calculated as a percentage of the withdrawn amount and is **burned** (deflationary).
+
+| Lock Duration | Penalty |
+| ------------- | ------- |
+| 0 days (no lock) | 0% |
+| 1-7 days | 5% |
+| 8-30 days | 10% |
+| 31-180 days | 25% |
+| 181-365 days | 40% |
+| 366-730 days | 60% |
+| 730+ days | 60% (capped) |
+
+**Note**: The penalty uses the next higher tier (no interpolation). For example, a 15-day lock uses the 10% penalty tier (8-30 days).
+
+#### Single Stake Per User
+
+Each user can have one stake account (stake_id = 0). This simplifies the staking experience while still providing all the benefits of lock-based multipliers and reward accumulation.
 
